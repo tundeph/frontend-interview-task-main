@@ -21,6 +21,6 @@ Important Information  ⚠️
 
 - Deploy an optional rendering for the `badge` under the **Valuation change** section so that it can change to a red theme for negative values
 - Add stylish, badge-like labels to some information on the page
-- Recommend a card-style design to show the information 
-- Use graphs or bar-cahrts with tools like `chart.js` to represent the information in **Valuation change** section 
-- Deploy better styling for the side-menu so that it takes the exact height of the screen and it is stays at the side of the page at wider screen sizes 
+- Recommend & deployed a dashboard-style/card-style user interface to show the information better. With this, some information can be highlited more than others to give better UX.
+- Use graphs or bar-charts with tools like `chart.js` to represent the information in **Valuation change** section (of course in a dashboard-style theme)
+- Deploy better styling for the side-menu so that it takes the exact height of the screen and it stays at the side of the page at wider screen sizes 
