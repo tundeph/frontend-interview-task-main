@@ -4,8 +4,6 @@ IMPORTANT INFORMATION
 ----
 - I did not fork this repo from your main branch on purpose
 - I used the `component-name` lowercase style to name the components because I saw the format and wanted to stay within "your standards" as against using the easier `ComponentName` naming style    
-Customers will now be able to receive automatic value updates on their properties
-and we would like to enhance the experience by summarizing their changes
 
 Please read this whole document before starting
 
