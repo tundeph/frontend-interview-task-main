@@ -5,9 +5,6 @@ IMPORTANT INFORMATION
 - I did not fork this repo from your main branch on purpose
 - I used the `component-name` lowercase style to name the components because I saw the format and wanted to stay within "your standards" as against using the easier `ComponentName` naming style    
 
-Please read this whole document before starting
-
-This prototype is built using NextJS and makes use of styled components
 
 ## What I did:
 
