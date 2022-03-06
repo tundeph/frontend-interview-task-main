@@ -16,10 +16,9 @@ IMPORTANT INFORMATION
 - I created an helper function file (as suggested) to handle some generic formatting and calculations 
 - I used `prop-types` for type checking in the `helper` function file
 
-We would like you to:
 
 ## Given more time, I would: 
-----
+
 - Deployed an optional rendering for the `badge` under the **Valuation change** section so that it can change to a red theme for negative values
 - I would add stylish, badge-like labels to some information on the page
 - Recommend a card-style design to show the information 
