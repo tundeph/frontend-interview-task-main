@@ -1,6 +1,6 @@
-import styled, {ThemeProvider} from "styled-components"
+import styled, { ThemeProvider } from "styled-components"
 
-import {theme} from "../theme"
+import { theme } from "../theme"
 import "../styles/reset.css"
 import "../styles/globals.css"
 
@@ -32,7 +32,7 @@ const Page = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width:  ${(props) => props.theme.breakpoints.l}px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.l}px) {
     flex-direction: row;
 
     ${Sidebar} {
@@ -51,18 +51,18 @@ const Content = styled.div`
   padding-bottom: 100px;
 `
 
-function App({Component, pageProps}) {
+function App({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Body>
-      <Page>
-        <Sidebar />
-        <Content>
-        <Component {...pageProps} />
-        </Content>
-        <NavBar />
-      </Page>
-    </Body>
+        <Page>
+          <Sidebar />
+          <Content>
+            <Component {...pageProps} />
+          </Content>
+          <NavBar />
+        </Page>
+      </Body>
     </ThemeProvider>
   )
 }
