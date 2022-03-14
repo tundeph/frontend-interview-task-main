@@ -10,14 +10,11 @@ const formatCurrency = (value) => {
 
 const formatDate = (val, type) => {
   const value = new Date(val).toISOString()
-  switch (type.toLowerCase()) {
-    case "ddmmyy":
-      return format(new Date(value), "do MMM yyyy")
-    case "mmyy":
-      return format(new Date(value), "MMM yyyy")
-    default:
-      return value
+  const formatObject = {
+    ddmmyy: "do MMM yyyy",
+    mmyy: "MMM yyyy",
   }
+  return format(new Date(value), formatObject[type.toLowerCase()]) ?? value
 }
 
 const formatNextUpdateDate = (lastUpdate, updateAfterDays, type) => {
