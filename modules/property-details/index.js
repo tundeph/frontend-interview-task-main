@@ -1,7 +1,6 @@
 /* eslint-disable max-statements */
 import React from "react"
 import { PropContextProvider } from "../../context/prop-context"
-
 import { useFetch } from "../../hooks/useFetch"
 
 //components

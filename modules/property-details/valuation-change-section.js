@@ -1,12 +1,18 @@
 import React, { useContext } from "react"
 import { PropContext } from "../../context/prop-context"
+
+//components
 import RowContainer from "../../components/row-container"
 import { Badge } from "../../components/badge"
+
+//helper
 import {
   formatCurrency,
   formatDate,
   getPurchaseYears,
 } from "../../helper/helper"
+
+//styles
 import {
   AccountLabel,
   AccountList,
@@ -28,31 +34,33 @@ const ValuationChangeSection = () => {
   return (
     <AccountSection>
       <AccountLabel> Valuation Change </AccountLabel>
-      <RowContainer>
-        <AccountList>
-          <AccountListItem>
-            <InfoText>
-              Purchased for
-              <BiggerText>
-                {" "}
-                {formatCurrency(originalPurchasePrice)}
-              </BiggerText>{" "}
-              in {formatDate(originalPurchasePriceDate, "mmyy")}
-            </InfoText>
-          </AccountListItem>
-          <AccountListItem>
-            <InfoText>Since purchase</InfoText>
-            <Badge>
-              {` ${formatCurrency(sincePurchase)}
+      {recentValuation && (
+        <RowContainer>
+          <AccountList>
+            <AccountListItem>
+              <InfoText>
+                Purchased for
+                <BiggerText>
+                  {" "}
+                  {formatCurrency(originalPurchasePrice)}
+                </BiggerText>{" "}
+                in {formatDate(originalPurchasePriceDate, "mmyy")}
+              </InfoText>
+            </AccountListItem>
+            <AccountListItem>
+              <InfoText>Since purchase</InfoText>
+              <Badge>
+                {` ${formatCurrency(sincePurchase)}
                       (${sincePurchasePercentage}%)`}
-            </Badge>
-          </AccountListItem>
-          <AccountListItem>
-            <InfoText>Annual appreciation</InfoText>
-            <Badge>{`${annualAppreciation}%`}</Badge>
-          </AccountListItem>
-        </AccountList>
-      </RowContainer>
+              </Badge>
+            </AccountListItem>
+            <AccountListItem>
+              <InfoText>Annual appreciation</InfoText>
+              <Badge>{`${annualAppreciation}%`}</Badge>
+            </AccountListItem>
+          </AccountList>
+        </RowContainer>
+      )}
     </AccountSection>
   )
 }
